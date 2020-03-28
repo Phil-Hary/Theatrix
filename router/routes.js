@@ -3,9 +3,7 @@ const router = express.Router();
 const login = require('../middlewares/login');
 const bodyParser = require('body-parser');
 
-/*router.use('/',(req,res)=>{
-	res.send("Hi");
-});*/
+
 
 
 

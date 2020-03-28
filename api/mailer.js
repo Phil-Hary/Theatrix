@@ -8,31 +8,9 @@ const mailer = (userName, emailId, otp) => {
 	const theatrixPassword = props.offPassword;
 	
 	let transporter =  nodemailer.createTransport({
-			
-		/*auth: {
-			type: 'OAuth2',
-			user: theatrixEmail,
-			clientId: props.offClientId
-		  },
-		  AgAAAAA-1DpyAAY_NzJ0C7AFv0Hhp6GMk3YpoSs
-		  host: "pop.yandex.com",
-		  service: 'yandex',
-		  port:465,
-		  secure:false,
-		  tls: {
-			 rejectUnauthorized: false
-		  }*/
 		  
 		  service: 'Gmail',
 		  secure:true,
-		  /*auth: {
-			  XOAuth2:{
-				user: theatrixEmail,
-				clientId: '124685571641-bj58mm26hk5j8u1ot94opf57casq4nvs.apps.googleusercontent.com',
-				clientSecret: 'hLp32kuC3mrvxIxZwU3u_IME',
-				refreshToken:'1//041yKCbzLRNRkCgYIARAAGAQSNwF-L9Ir72PLd9b1cR5VpjobI1og_84HopJF7-4MZzg5vXogcikUbMgVitaaW8i7JoPOhsKe1vU'
-			  }
-		  }*/
 		  
 		  auth:{
 			  type: "OAuth2",
